@@ -32,6 +32,7 @@ set laststatus=2
 let g:nerdtree_tabs_open_on_console_startup=0
 let g:airline#extensions#tabline#enabled = 1
 noremap <C-n> :NERDTreeTabsToggle<CR>
+noremap <C-t> <C-^>
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 Plug 'jiangmiao/auto-pairs'
