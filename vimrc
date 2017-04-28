@@ -1,3 +1,4 @@
+set term=screen-256color
 set history=700
 set autoread
 set so=7
