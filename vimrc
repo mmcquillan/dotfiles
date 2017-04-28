@@ -43,4 +43,5 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
+Plug 'qpkorr/vim-bufkill'
 call plug#end()
