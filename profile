@@ -1,5 +1,3 @@
-alias pj="mosh matt@projectjane.io"
-alias mfa="mosh matt@mfa-db.musicforall.org"
 alias ls="ls -FG"
 PATH=$PATH:~/bin
 
