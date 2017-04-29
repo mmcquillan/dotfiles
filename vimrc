@@ -44,4 +44,5 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'qpkorr/vim-bufkill'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
