@@ -1,5 +1,11 @@
+# some settings
 alias ls="ls -FG"
 PATH=$PATH:~/bin
+
+# local profile
+if [ -f ~/.profile.local ]; then
+	source ~/.profile.local
+fi
 
 # get current branch in git repo
 function parse_git_branch() {
@@ -48,4 +54,5 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\n\w\`parse_git_branch\`\n\h> "
+# setup the command line
+export PS1="\n\e[2m\w \`parse_git_branch\`\n\e[38;5;118m\h>\e[0m "
