@@ -14,6 +14,7 @@ set mat=2
 set noerrorbells
 set novisualbell
 set t_vb=
+set belloff=all
 set tm=500
 syntax on
 set nobackup
@@ -25,6 +26,7 @@ set shiftwidth=4
 set tabstop=4
 set paste
 set number
+set hidden
 set ai "Auto indent"
 set si "Smart indent"
 set wrap "Wrap lines"
