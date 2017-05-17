@@ -1,5 +1,5 @@
 # some settings
-alias ls="ls -FG"
+alias ls="ls -F"
 PATH=$PATH:~/bin
 
 # local profile

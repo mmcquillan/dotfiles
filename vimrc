@@ -24,7 +24,6 @@ set expandtab
 set smarttab
 set shiftwidth=4
 set tabstop=4
-set paste
 set number
 set hidden
 set ai "Auto indent"
@@ -32,19 +31,23 @@ set si "Smart indent"
 set wrap "Wrap lines"
 set shell=/bin/bash
 set laststatus=2
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
+set list
 let g:nerdtree_tabs_open_on_console_startup=0
 let g:airline#extensions#tabline#enabled = 1
 noremap <C-n> :NERDTreeTabsToggle<CR>
 noremap <C-k> :bnext<CR>
 noremap <C-j> :bprevious<CR>
 call plug#begin('~/.vim/plugged')
-Plug 'fatih/vim-go'
 Plug 'jiangmiao/auto-pairs'
+Plug 'fatih/vim-go'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'qpkorr/vim-bufkill'
-Plug 'jiangmiao/auto-pairs'
+Plug 'elzr/vim-json'
+Plug 'airblade/vim-gitgutter'
+Plug 'myusuf3/numbers.vim'
 call plug#end()
