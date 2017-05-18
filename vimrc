@@ -22,8 +22,8 @@ set nowb
 set noswapfile
 set expandtab
 set smarttab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set number
 set hidden
 set ai "Auto indent"
@@ -31,7 +31,7 @@ set si "Smart indent"
 set wrap "Wrap lines"
 set shell=/bin/bash
 set laststatus=2
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
+set listchars=tab:>\ ,trail:~,extends:>,precedes:<
 set list
 let g:nerdtree_tabs_open_on_console_startup=0
 let g:airline#extensions#tabline#enabled = 1
@@ -50,4 +50,6 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'elzr/vim-json'
 Plug 'airblade/vim-gitgutter'
 Plug 'myusuf3/numbers.vim'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
+colorscheme wasabi256
