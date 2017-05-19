@@ -2,7 +2,7 @@
 if [ "$(uname -a | grep Linux)" ]; then
   alias ls="ls -F --color"
 else
-  alias ls="ls -F"
+  alias ls="ls -FG"
 fi
 PATH=$PATH:~/bin
 
