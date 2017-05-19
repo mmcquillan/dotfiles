@@ -1,5 +1,9 @@
 # some settings
-alias ls="ls -F"
+if [ "$(uname -a | grep Linux)" ]; then
+  alias ls="ls -F --color"
+else
+  alias ls="ls -F"
+fi
 PATH=$PATH:~/bin
 
 # local profile
