@@ -1,9 +1,12 @@
-# some settings
+# shell settings
 if [ "$(uname -a | grep Linux)" ]; then
   alias ls="ls -F --color"
+  alias pbcopy='xclip -selection clipboard'
+  alias pbpaste='xclip -selection clipboard -o'
 else
   alias ls="ls -FG"
 fi
+export HISTCONTROL=ignoreboth:erasedups
 PATH=$PATH:~/bin
 
 # local profile

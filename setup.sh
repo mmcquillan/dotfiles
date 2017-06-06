@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # settings
-echo 'Setting ~/.vimrc'
+echo 'Copying ~/.vimrc'
 cp ./vimrc ~/.vimrc
-echo 'Setting ~/.profile'
+echo 'Copying ~/.profile'
 cp ./profile ~/.profile
-echo 'Setting ~/.tmux.conf'
+echo 'Copying ~/.tmux.conf'
 cp ./tmux.conf ~/.tmux.conf
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
 	echo 'Installing plug.vim'
@@ -13,6 +13,10 @@ if [ ! -f ~/.vim/autoload/plug.vim ]; then
 fi
 
 # additional feedback
+echo '...'
+echo 'reload ~/.profile with source'
+echo 'save local to ~/.profile.local'
 echo 'run vim and :PlugInstall'
 echo 'run vim and :GoInstallBinaries'
-echo 'save local to ~/.profile.local'
+echo '...'
+echo 'DONE'
