@@ -38,6 +38,11 @@ let g:airline#extensions#tabline#enabled = 1
 noremap <C-n> :NERDTreeTabsToggle<CR>
 noremap <C-k> :bnext<CR>
 noremap <C-j> :bprevious<CR>
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
 call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go'
