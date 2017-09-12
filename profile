@@ -62,4 +62,4 @@ function parse_git_dirty {
 }
 
 # setup the command line
-export PS1="\n\e[2m\w \`parse_git_branch\`\n\e[38;5;118m\h>\e[0m "
+export PS1="\n\[\e[2m\]\w \`parse_git_branch\`\n\[\e[38;5;118m\]\h>\[\e[0m\] "
