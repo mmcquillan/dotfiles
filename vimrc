@@ -29,7 +29,9 @@ set hidden
 set ai "Auto indent"
 set si "Smart indent"
 set wrap "Wrap lines"
+set mouse=a
 set shell=/bin/bash
+set spelllang=en
 set laststatus=2
 set listchars=tab:>\ ,trail:~,extends:>,precedes:<
 set list
