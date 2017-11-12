@@ -41,6 +41,12 @@ let g:ale_sign_column_always = 1
 noremap <C-n> :NERDTreeTabsToggle<CR>
 noremap <C-k> :bnext<CR>
 noremap <C-j> :bprevious<CR>
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif"
 if exists('+colorcolumn')
   set colorcolumn=80
 else
