@@ -38,6 +38,8 @@ set list
 let g:nerdtree_tabs_open_on_console_startup=0
 let g:airline#extensions#tabline#enabled = 1
 let g:ale_sign_column_always = 1
+nnoremap n nzz
+nnoremap N Nzz
 noremap <C-n> :NERDTreeTabsToggle<CR>
 noremap <C-k> :bnext<CR>
 noremap <C-j> :bprevious<CR>
