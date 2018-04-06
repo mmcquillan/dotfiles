@@ -1,4 +1,4 @@
-# shell settings
+# mac/linux shell settings
 if [ "$(uname -a | grep Linux)" ]; then
   alias ls="ls -F --color"
   alias pbcopy='xclip -selection clipboard'
@@ -6,7 +6,15 @@ if [ "$(uname -a | grep Linux)" ]; then
 else
   alias ls="ls -FG"
 fi
-export HISTCONTROL=ignoreboth:erasedups
+
+# bash history
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# my bin
 PATH=$PATH:~/bin
 
 # local profile

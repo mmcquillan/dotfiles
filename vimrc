@@ -31,7 +31,7 @@ set si "Smart indent"
 set wrap "Wrap lines"
 set mouse=a
 set shell=/bin/bash
-set spelllang=en
+set spelllang=en_us
 set laststatus=2
 set listchars=tab:>\ ,trail:~,extends:>,precedes:<
 set list
