@@ -69,5 +69,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'w0rp/ale'
+Plug 'hashicorp/sentinel.vim'
 call plug#end()
 colorscheme wasabi256
