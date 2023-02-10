@@ -1,5 +1,7 @@
 # aliases
-alias clock='watch -n15 "date +\"%I:%M\" | figlet -k"'
+export TZ='America/Indianapolis'
+alias clock='watch -n15 "date +\"%I:%M\" | figlet -k | sed \"s/^/       /\""'
+alias re-source="source ~/.zshrc"
 
 
 # mac/linux shell settings
@@ -21,7 +23,7 @@ PATH=$PATH:~/bin
 
 # prompt
 setopt PROMPT_SUBST
-alias python=/usr/local/bin/python3.9
+alias python=$(which python3.9)
 source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 PROMPT='%~%b$(git_super_status) > '
 
