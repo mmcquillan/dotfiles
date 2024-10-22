@@ -20,6 +20,8 @@ brew install zsh-git-prompt
 cp ./zshrc ~/.zshrc
 touch ~/.zshrc.local
 cp ./vimrc ~/.vimrc
+mkdir -p ~/.config/helix
+cp ./helix.toml ~/.config/helix/config.toml
 cp ./tmux.conf ~/.tmux.conf
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
