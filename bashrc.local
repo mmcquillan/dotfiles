@@ -1,0 +1,18 @@
+# aliases
+export TZ='America/Indianapolis'
+alias clock='watch -n15 "date +\"%I:%M\" | figlet -k | sed \"s/^/       /\""'
+alias re-source="source ~/.bashrc"
+
+# linux shell settings
+alias ls="ls -F --color"
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+# bash setting
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+
+# my bin
+PATH=$PATH:~/bin
+
