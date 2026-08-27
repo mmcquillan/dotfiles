@@ -6,6 +6,7 @@ sudo apt install tmux
 sudo apt install watch
 sudo apt install htop
 sudo apt install curl
+sudo apt install vim
 
 # append existing bash file
 cat ./bashrc-append >> ~/.bashrc
