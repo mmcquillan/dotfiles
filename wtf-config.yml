@@ -1,0 +1,103 @@
+wtf:
+  colors:
+    border:
+      focusable: gray
+      focused: orange
+      normal: gray
+  grid:
+    columns: [50, 54, 54, 54, 90]
+    rows: [10, 20, 10, 4, 4, 90]
+  refreshInterval: 1
+  mods:
+    clocks_a:
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: true
+      locations:
+        AUS: "Australia/Sydney"
+        IND: "Asia/Calcutta"
+        NLD: "Europe/Amsterdam"
+        UK: "GB"
+        US-East: "America/New_York"
+        US-Pac: "US/Pacific"
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 15
+      sort: "alphabetical"
+      title: "Clocks"
+      type: "clocks"
+    prettyweather:
+      enabled: true
+      city: "carmel, in"
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 5m
+      unit: "u"
+    hackernews:
+      enabled: true
+      numberOfStories: 18
+      position:
+        top: 1
+        left: 1
+        width: 2
+        height: 1
+      storyType: top
+      refreshinterval: 15m
+    cmdrunner:
+      enabled: true
+      cmd: "clocky.sh"
+      title: "Time"
+      position:
+        top: 2
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 7s
+    yfinance:
+      enabled: true
+      title: "Stocks"
+      position:
+        top: 2
+        left: 2
+        height: 1
+        width: 1
+      symbols:
+        - "DOW"
+        - "^GSPC"
+        - "^IXIC"
+        - "IBM"
+        - "AAPL"
+        - "MSFT"
+        - "NVDA"
+      refreshinterval: 1m
+    resourceusage:
+      enabled: true
+      position:
+        top: 0
+        left: 0
+        height: 4
+        width: 1
+      refreshinterval: 1s
+      showCPU: true
+      showMem: true
+      showSwp: true
+    uptime:
+      args: []
+      cmd: "uptime"
+      enabled: true
+      title: "Uptime"
+      position:
+        top: 3
+        left: 1
+        height: 1
+        width: 2
+      refreshInterval: 30
+      type: cmdrunner

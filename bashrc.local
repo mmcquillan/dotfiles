@@ -1,6 +1,7 @@
 # aliases
 export TZ='America/Indianapolis'
-alias clock='watch -n15 "date +\"%I:%M\" | figlet -k | sed \"s/^/       /\""'
+alias clock-loop='watch -n15 "date +\"%I:%M\" | figlet -k | sed \"s/^/       /\""'
+alias clock='date +"%I:%M" | figlet -k'
 alias re-source="source ~/.bashrc"
 
 # linux shell settings
@@ -15,4 +16,4 @@ export HISTFILESIZE=100000
 
 # my bin
 PATH=$PATH:~/bin
-
+PATH=$PATH:~/go/bin
